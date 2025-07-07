@@ -91,6 +91,9 @@ Changelog:
 - July 07, 2025. Replaced blog section with comprehensive experiences and achievements section
 - July 07, 2025. Updated layout to left-aligned design with smaller profile image
 - July 07, 2025. Enhanced background gradient from black to purplish tones
+- July 07, 2025. Reordered sections: Introduction → Goals → Skills → Projects → Rest
+- July 07, 2025. Removed cursor trail animation completely
+- July 07, 2025. Updated navigation to include Goals section in proper order
 ```
 
 ## User Preferences

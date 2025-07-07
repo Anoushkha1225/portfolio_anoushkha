@@ -47,9 +47,9 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <HeroSection />
-        <ProjectsSection />
-        <SkillsSection />
         <GoalsSection />
+        <SkillsSection />
+        <ProjectsSection />
         <FunFactsSection />
         <ExperiencesSection />
         <ContactSection />
