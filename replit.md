@@ -106,6 +106,7 @@ Changelog:
 - July 07, 2025. Improved project filtering and sorting to ensure RPS repository appears first in projects list
 - July 07, 2025. Set specific project list in exact order: Deepfake Detection, RecallAI, FakeNewsDetection, Appointment-booking-system, weatherapp, RPS
 - July 07, 2025. Updated profile image to use provided personal photo in hero section
+- July 07, 2025. Added interactive Tic-Tac-Toe game to fill whitespace on right side of hero section
 ```
 
 ## User Preferences
