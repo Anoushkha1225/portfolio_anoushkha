@@ -6,7 +6,7 @@ import HeroSection from "@/components/hero-section";
 import ProjectsSection from "@/components/projects-section";
 import BeliefsSection from "@/components/beliefs-section";
 import FunFactsSection from "@/components/fun-facts-section";
-import BlogSection from "@/components/blog-section";
+import ExperiencesSection from "@/components/experiences-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import EasterEgg from "@/components/easter-egg";
@@ -49,7 +49,7 @@ export default function Home() {
         <ProjectsSection />
         <BeliefsSection />
         <FunFactsSection />
-        <BlogSection />
+        <ExperiencesSection />
         <ContactSection />
       </motion.main>
       

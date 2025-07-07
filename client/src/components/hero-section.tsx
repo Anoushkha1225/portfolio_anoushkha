@@ -16,19 +16,19 @@ export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center relative pt-20">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Picture Column */}
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+          {/* Profile Picture Column - Left Side */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center lg:justify-start"
+            className="flex-shrink-0"
           >
             <div className="relative">
               <motion.img
-                src="https://images.unsplash.com/photo-1494790108755-2616c0763e66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+                src="https://images.unsplash.com/photo-1494790108755-2616c0763e66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
                 alt="Anoushkha - AI & ML Engineering Student"
-                className="w-64 h-64 rounded-full object-cover glow-effect transition-all duration-300"
+                className="w-48 h-48 lg:w-56 lg:h-56 rounded-full object-cover glow-effect transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 animate={{ rotateY: [0, 5, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
@@ -41,12 +41,12 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Introduction Column */}
+          {/* Introduction Column - Right Side */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-center lg:text-left"
+            className="flex-1 text-center lg:text-left"
           >
             <motion.h1
               className="font-space font-bold text-4xl md:text-6xl mb-6 text-gradient"
@@ -75,7 +75,7 @@ export default function HeroSection() {
               {identityPoints.map((point, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center justify-center lg:justify-start space-x-3"
+                  className="flex items-center justify-start space-x-3"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
@@ -88,7 +88,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-4 justify-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.6 }}

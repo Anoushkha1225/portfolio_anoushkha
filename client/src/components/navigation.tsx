@@ -19,6 +19,7 @@ export default function Navigation() {
     { href: '#home', label: 'Home' },
     { href: '#projects', label: 'Projects' },
     { href: '#beliefs', label: 'Beliefs' },
+    { href: '#experiences', label: 'Experiences' },
     { href: '#contact', label: 'Contact' },
   ];
 
