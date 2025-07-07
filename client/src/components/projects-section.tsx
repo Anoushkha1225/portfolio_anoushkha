@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github, Star } from "lucide-react";
 import { useGithubProjects } from "@/hooks/use-github-projects";
+import { useParallax } from "../hooks/use-parallax";
 
 export default function ProjectsSection() {
   const { ref, inView } = useInView({
@@ -10,6 +11,7 @@ export default function ProjectsSection() {
   });
 
   const { data: githubProjects, isLoading } = useGithubProjects();
+  const featuredParallax = useParallax({ intensity: 12, range: 180 });
 
   const projectOrder = [
     "Deepfake Detection",
@@ -75,6 +77,8 @@ export default function ProjectsSection() {
         >
           {/* Featured Project */}
           <motion.div
+            ref={featuredParallax.ref}
+            style={featuredParallax.style}
             variants={itemVariants}
             className="project-card bg-white/5 backdrop-blur-custom rounded-2xl p-6 border border-white/10 hover:border-lavender/50 lg:col-span-2"
             whileHover={{ scale: 1.02 }}

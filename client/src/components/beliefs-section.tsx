@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useParallax } from "../hooks/use-parallax";
 
 export default function BeliefsSection() {
   const { ref, inView } = useInView({

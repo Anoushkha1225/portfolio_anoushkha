@@ -2,11 +2,15 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import profileImage from "@assets/WhatsApp Image 2024-06-28 at 20.52.00_fa217f05_1751918333496.jpg";
 import TicTacToe from "./tic-tac-toe";
+import { useParallax } from "../hooks/use-parallax";
 
 export default function HeroSection() {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const profileParallax = useParallax({ intensity: 15, range: 150 });
+  const gameParallax = useParallax({ intensity: 10, range: 200 });
 
   const identityPoints = [
     { emoji: '🧠', text: 'AI & ML Engineering Student', color: 'mint' },
@@ -21,6 +25,8 @@ export default function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-8">
           {/* Profile Picture Column - Left Side */}
           <motion.div
+            ref={profileParallax.ref}
+            style={profileParallax.style}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -131,6 +137,8 @@ export default function HeroSection() {
 
           {/* Tic-Tac-Toe Game - Right Side */}
           <motion.div
+            ref={gameParallax.ref}
+            style={gameParallax.style}
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}

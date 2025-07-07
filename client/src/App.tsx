@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import ScrollProgress from "./components/scroll-progress";
+import ParallaxBackground from "./components/parallax-background";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ParallaxBackground />
         <ScrollProgress />
         <Toaster />
         <Router />

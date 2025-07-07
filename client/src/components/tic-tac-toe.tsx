@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { RotateCcw } from "lucide-react";
+import { useParallax } from "../hooks/use-parallax";
 
 type Player = 'X' | 'O' | null;
 
@@ -8,6 +9,7 @@ export default function TicTacToe() {
   const [board, setBoard] = useState<Player[]>(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
   const [gameWon, setGameWon] = useState(false);
+  const gameParallax = useParallax({ intensity: 6, range: 100 });
 
   const calculateWinner = (squares: Player[]): Player => {
     const lines = [
@@ -66,7 +68,11 @@ export default function TicTacToe() {
         <p className="text-sm text-white/70">{getStatus()}</p>
       </div>
       
-      <div className="grid grid-cols-3 gap-2 mb-4">
+      <div 
+        ref={gameParallax.ref}
+        style={gameParallax.style}
+        className="grid grid-cols-3 gap-2 mb-4"
+      >
         {board.map((cell, index) => (
           <motion.button
             key={index}
