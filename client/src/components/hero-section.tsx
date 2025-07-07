@@ -8,7 +8,7 @@ export default function HeroSection() {
 
   const identityPoints = [
     { emoji: '🧠', text: 'AI & ML Engineering Student', color: 'mint' },
-    { emoji: '🧪', text: 'LSTM + Transformers Learner', color: 'baby-blue' },
+    { emoji: '🧪', text: 'Prompt Engineering', color: 'baby-blue' },
     { emoji: '🧵', text: 'Curious Human | Notebook Hoarder', color: 'light-peach' },
     { emoji: '🎮', text: 'Gamer with a thing for tech quirks', color: 'lavender' },
   ];
@@ -69,7 +69,7 @@ export default function HeroSection() {
                 backgroundClip: "text"
               }}
             >
-              Hey, I'm ANV Anoushkha Lathikaa 👋
+              Hey, I'm Anoushkha 👋
             </motion.h1>
             
             <motion.p
