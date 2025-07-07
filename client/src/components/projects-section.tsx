@@ -11,6 +11,15 @@ export default function ProjectsSection() {
 
   const { data: githubProjects, isLoading } = useGithubProjects();
 
+  const projectOrder = [
+    "Deepfake Detection",
+    "RecallAI", 
+    "FakeNewsDetection",
+    "Appointment-booking-system",
+    "weatherapp",
+    "RPS"
+  ];
+
   const featuredProject = {
     title: "Deepfake Detection",
     description: "Built a deep learning model using LSTM to detect face-swapped videos with high accuracy.",
@@ -130,19 +139,12 @@ export default function ProjectsSection() {
             ))
           ) : (
             githubProjects?.filter(project => 
-              project.name !== 'Bazarrify' && 
-              project.name !== 'BazaarifyFullStack' && 
-              !project.fork && 
-              !project.archived && 
-              project.name !== 'Anoushkha1225'
+              projectOrder.slice(1).includes(project.name) // Exclude "Deepfake Detection" as it's featured
             ).sort((a, b) => {
-              // Prioritize RPS and Fitpulse-Website first
-              if (a.name === 'RPS') return -1;
-              if (b.name === 'RPS') return 1;
-              if (a.name === 'Fitpulse-Website') return -1;
-              if (b.name === 'Fitpulse-Website') return 1;
-              return 0;
-            }).slice(0, 4).map((project, index) => (
+              const aIndex = projectOrder.indexOf(a.name);
+              const bIndex = projectOrder.indexOf(b.name);
+              return aIndex - bIndex;
+            }).map((project, index) => (
               <motion.div
                 key={project.id}
                 variants={itemVariants}

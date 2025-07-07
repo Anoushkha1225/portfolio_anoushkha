@@ -104,6 +104,7 @@ Changelog:
 - July 07, 2025. Changed cursor to lighter lavender color and fixed navbar clickability to buttons only
 - July 07, 2025. Updated projects section: removed Bazarrify and BazaarifyFullStack, prioritized RPS and Fitpulse-Website, added demo buttons for projects with GitHub Pages
 - July 07, 2025. Improved project filtering and sorting to ensure RPS repository appears first in projects list
+- July 07, 2025. Set specific project list in exact order: Deepfake Detection, RecallAI, FakeNewsDetection, Appointment-booking-system, weatherapp, RPS
 ```
 
 ## User Preferences
