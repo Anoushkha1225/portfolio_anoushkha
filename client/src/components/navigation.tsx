@@ -34,8 +34,8 @@ export default function Navigation() {
         scrolled ? 'bg-black/30 backdrop-blur-custom' : 'bg-transparent'
       } border-b border-white/10`}
     >
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex justify-between items-center">
+      <div className="container mx-auto px-6 py-4 pointer-events-none">
+        <div className="flex justify-between items-center pointer-events-auto">
           <motion.div
             whileHover={{ scale: 1.05 }}
             animate={{ 
@@ -58,23 +58,23 @@ export default function Navigation() {
             ANV Anoushkha Lathikaa
           </motion.div>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 pointer-events-none">
             {navItems.map((item) => (
               <motion.a
                 key={item.href}
                 href={item.href}
                 whileHover={{ scale: 1.1 }}
-                className="hover:text-lavender transition-colors cursor-pointer"
+                className="hover:text-lavender transition-colors cursor-pointer pointer-events-auto"
               >
                 {item.label}
               </motion.a>
             ))}
           </div>
           
-          <div className="md:hidden">
+          <div className="md:hidden pointer-events-none">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-lavender transition-colors"
+              className="text-white hover:text-lavender transition-colors pointer-events-auto"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -87,14 +87,14 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4"
+            className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4 pointer-events-none"
           >
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block py-2 hover:text-lavender transition-colors"
+                className="block py-2 hover:text-lavender transition-colors pointer-events-auto"
               >
                 {item.label}
               </a>

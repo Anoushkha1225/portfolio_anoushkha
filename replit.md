@@ -101,6 +101,7 @@ Changelog:
 - July 07, 2025. Added "Still Loading..." personality section with animated dots and glitch effects
 - July 07, 2025. Moved "Still Loading..." section to appear after academics and before contact
 - July 07, 2025. Updated contact section: removed Twitter, made email clickable, added LinkedIn URL
+- July 07, 2025. Changed cursor to lighter lavender color and fixed navbar clickability to buttons only
 ```
 
 ## User Preferences

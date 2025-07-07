@@ -191,7 +191,7 @@
 
 /* Custom cursor colors */
 * {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23200a30" d="M0 0l4 16 3-5 5-3z"/></svg>'), auto;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23e0d4f7" d="M0 0l4 16 3-5 5-3z"/></svg>'), auto;
 }
 
 .cursor-trail {
