@@ -1,0 +1,82 @@
+Create a personal portfolio website for Anoushkha, an AI & ML engineering student with a curious, geeky, and slightly quirky vibe. She’s just starting out professionally, so the focus should be on her academic + GitHub projects, passion for AI, and energetic personality.
+
+💫 Design Theme:
+Minimal but dynamic.
+
+Soft pastel color palette (lavender, mint, baby blue, light peach) on a dark background (#121212 or #0d0d0d).
+
+Use subtle animated cursor effects (e.g., trailing glow, dot ripple, color shift on hover).
+
+Smooth transitions and microinteractions throughout.
+
+✍️ Font Pairing:
+Space Grotesk (headers – modern, techy but friendly)
+
+Inter (body – clean and readable)
+
+📌 Sections to Include:
+🏠 Home / About Me
+Fun line like:
+“Hey, I’m Anoushkha 👋 I explore AI, build cool things, and ask ‘what if?’ a lot.”
+
+Short bullet list of identity points:
+
+🧠 AI & ML Engineering Student
+
+🧪 LSTM + Transformers Learner
+
+🧵 Curious Human | Notebook Hoarder
+
+🎮 Gamer with a thing for tech quirks
+
+Add a “View Projects” button and “Download Resume” button.
+
+💼 Projects
+Display in animated cards with hover effects. Each card includes a:
+
+Title (from GitHub)
+
+Short description
+
+Tags if possible (e.g., #ML, #Python, #AI)
+
+Link to GitHub repo
+
+✅ Pull projects dynamically from GitHub profile: https://github.com/Anoushkha1225
+✅ Also manually feature this project (not in GitHub yet):
+Deepfake Detection using LSTM – Built a deep learning model to detect face-swapped videos.
+
+📓 Blog / Notes
+Optional. A section for future thoughts or notes on AI, product ideas, or experiments.
+Use placeholders or “Coming Soon” if needed.
+
+💡 Product Beliefs
+Clean grid layout of short beliefs like:
+
+✅ AI should enhance, not replace.
+
+✅ Curiosity > Expertise.
+
+✅ Simplicity is powerful.
+
+✅ Discovery is nonlinear.
+
+🧩 Fun Facts / Personality
+A playful section with pastel icons or illustrations:
+
+🎮 Currently Playing: Add any games (e.g., Genshin, Stardew Valley?)
+
+📚 Currently Reading: Any book title you like
+
+🧠 Into: Retro tech, pixel art, notebooks
+
+🐾 Include an easter egg — like a glowing cheese animation or pixel corgi on hover
+
+🔗 Footer with Contact
+Name: Anoushkha
+
+Email: vedaanoushkha@gmail.com
+
+GitHub: Anoushkha1225
+
+Add a simple “Let’s Connect” line with soft glowing icons
