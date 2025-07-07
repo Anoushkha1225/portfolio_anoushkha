@@ -7,6 +7,7 @@ import ProjectsSection from "@/components/projects-section";
 import SkillsSection from "@/components/skills-section";
 import GoalsSection from "@/components/goals-section";
 
+import LoadingSection from "@/components/loading-section";
 import ExperiencesSection from "@/components/experiences-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
@@ -47,6 +48,7 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <HeroSection />
+        <LoadingSection />
         <GoalsSection />
         <SkillsSection />
         <ProjectsSection />
