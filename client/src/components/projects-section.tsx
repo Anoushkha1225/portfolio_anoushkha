@@ -131,6 +131,7 @@ export default function ProjectsSection() {
           ) : (
             githubProjects?.filter(project => 
               project.name !== 'Bazarrify' && 
+              project.name !== 'BazaarifyFullStack' && 
               (project.name === 'RPS' || 
                project.name === 'Fitpulse-Website' || 
                (!project.fork && !project.archived && project.name !== 'Anoushkha1225'))
