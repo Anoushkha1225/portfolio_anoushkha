@@ -214,22 +214,73 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
-/* Custom scrollbar */
+/* Hide scrollbar for webkit browsers */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
+  background: transparent;
 }
 
-::-webkit-scrollbar-track {
-  background: hsl(240, 10%, 3.9%);
+/* Hover scroll effect */
+body {
+  position: relative;
 }
 
-::-webkit-scrollbar-thumb {
-  background: hsl(248, 53%, 58%);
-  border-radius: 4px;
+body::after {
+  content: '';
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 6px;
+  height: 100vh;
+  background: linear-gradient(180deg, 
+    hsla(248, 53%, 58%, 0.2) 0%, 
+    hsla(120, 60%, 70%, 0.2) 50%, 
+    hsla(195, 53%, 79%, 0.2) 100%);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(248, 53%, 68%);
+body:hover::after {
+  opacity: 1;
+}
+
+/* Custom scroll progress indicator */
+.scroll-progress {
+  position: fixed;
+  right: 1px;
+  top: 0;
+  width: 3px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 1001;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body:hover .scroll-progress {
+  opacity: 1;
+}
+
+.scroll-progress::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--scroll-progress, 0%);
+  background: linear-gradient(to bottom, 
+    hsl(248, 53%, 58%), 
+    hsl(120, 60%, 70%), 
+    hsl(195, 53%, 79%));
+  transition: height 0.1s ease;
+  border-radius: 2px;
 }
