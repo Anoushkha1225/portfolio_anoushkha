@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import profileImage from "@assets/WhatsApp Image 2024-06-28 at 20.52.00_fa217f05_1751918333496.jpg";
 
 export default function HeroSection() {
   const scrollToProjects = () => {
@@ -26,7 +27,7 @@ export default function HeroSection() {
           >
             <div className="relative">
               <motion.img
-                src="https://images.unsplash.com/photo-1494790108755-2616c0763e66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
+                src={profileImage}
                 alt="Anoushkha - AI & ML Engineering Student"
                 className="w-48 h-48 lg:w-56 lg:h-56 rounded-full object-cover glow-effect transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
