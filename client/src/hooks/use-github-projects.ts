@@ -12,6 +12,8 @@ interface GitHubRepo {
   archived: boolean;
   created_at: string;
   updated_at: string;
+  has_pages: boolean;
+  homepage: string | null;
 }
 
 export function useGithubProjects() {

@@ -129,7 +129,12 @@ export default function ProjectsSection() {
               </motion.div>
             ))
           ) : (
-            githubProjects?.slice(0, 4).map((project, index) => (
+            githubProjects?.filter(project => 
+              project.name !== 'Bazarrify' && 
+              (project.name === 'RPS' || 
+               project.name === 'Fitpulse-Website' || 
+               (!project.fork && !project.archived && project.name !== 'Anoushkha1225'))
+            ).slice(0, 4).map((project, index) => (
               <motion.div
                 key={project.id}
                 variants={itemVariants}
@@ -161,16 +166,30 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                 <div className="flex justify-between items-center">
-                  <motion.a
-                    href={project.html_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    className="text-light-peach hover:text-white transition-colors flex items-center space-x-2"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>View Code</span>
-                  </motion.a>
+                  <div className="flex space-x-3">
+                    <motion.a
+                      href={project.html_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      className="text-light-peach hover:text-white transition-colors flex items-center space-x-2"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Code</span>
+                    </motion.a>
+                    {project.has_pages && (
+                      <motion.a
+                        href={`https://anoushkha1225.github.io/${project.name}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        className="text-baby-blue hover:text-white transition-colors flex items-center space-x-2"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>Demo</span>
+                      </motion.a>
+                    )}
+                  </div>
                   {project.stargazers_count > 0 && (
                     <div className="flex items-center space-x-1 text-gray-400">
                       <Star className="w-4 h-4" />
