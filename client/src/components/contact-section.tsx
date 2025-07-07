@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function ContactSection() {
   const { ref, inView } = useInView({
@@ -23,15 +23,9 @@ export default function ContactSection() {
     },
     {
       icon: Linkedin,
-      href: "#",
+      href: "https://www.linkedin.com/in/anv-anoushkha",
       color: "baby-blue",
       label: "LinkedIn"
-    },
-    {
-      icon: Twitter,
-      href: "#",
-      color: "mint",
-      label: "Twitter"
     }
   ];
 
