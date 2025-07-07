@@ -132,10 +132,17 @@ export default function ProjectsSection() {
             githubProjects?.filter(project => 
               project.name !== 'Bazarrify' && 
               project.name !== 'BazaarifyFullStack' && 
-              (project.name === 'RPS' || 
-               project.name === 'Fitpulse-Website' || 
-               (!project.fork && !project.archived && project.name !== 'Anoushkha1225'))
-            ).slice(0, 4).map((project, index) => (
+              !project.fork && 
+              !project.archived && 
+              project.name !== 'Anoushkha1225'
+            ).sort((a, b) => {
+              // Prioritize RPS and Fitpulse-Website first
+              if (a.name === 'RPS') return -1;
+              if (b.name === 'RPS') return 1;
+              if (a.name === 'Fitpulse-Website') return -1;
+              if (b.name === 'Fitpulse-Website') return 1;
+              return 0;
+            }).slice(0, 4).map((project, index) => (
               <motion.div
                 key={project.id}
                 variants={itemVariants}

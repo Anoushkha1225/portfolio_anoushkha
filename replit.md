@@ -103,6 +103,7 @@ Changelog:
 - July 07, 2025. Updated contact section: removed Twitter, made email clickable, added LinkedIn URL
 - July 07, 2025. Changed cursor to lighter lavender color and fixed navbar clickability to buttons only
 - July 07, 2025. Updated projects section: removed Bazarrify and BazaarifyFullStack, prioritized RPS and Fitpulse-Website, added demo buttons for projects with GitHub Pages
+- July 07, 2025. Improved project filtering and sorting to ensure RPS repository appears first in projects list
 ```
 
 ## User Preferences
