@@ -99,6 +99,7 @@ Changelog:
 - July 07, 2025. Transformed experiences section to academics and extra-curriculars
 - July 07, 2025. Updated content with CMRTC academic details and specific achievements
 - July 07, 2025. Added "Still Loading..." personality section with animated dots and glitch effects
+- July 07, 2025. Moved "Still Loading..." section to appear after academics and before contact
 ```
 
 ## User Preferences

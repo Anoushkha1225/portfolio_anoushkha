@@ -48,11 +48,11 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <HeroSection />
-        <LoadingSection />
         <GoalsSection />
         <SkillsSection />
         <ProjectsSection />
         <ExperiencesSection />
+        <LoadingSection />
         <ContactSection />
       </motion.main>
       
