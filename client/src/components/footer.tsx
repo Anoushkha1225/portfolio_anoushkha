@@ -11,7 +11,25 @@ export default function Footer() {
           className="text-gray-400 font-space"
         >
           Made with ❤️ and lots of curiosity by{" "}
-          <span className="text-gradient">Anoushkha</span>
+          <motion.span 
+            animate={{ 
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+            }}
+            transition={{ 
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            style={{
+              background: "linear-gradient(90deg, hsl(248, 53%, 58%), hsl(195, 53%, 79%), hsl(120, 60%, 70%), hsl(248, 53%, 58%))",
+              backgroundSize: "200% 100%",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text"
+            }}
+          >
+            ANV Anoushkha Lathikaa
+          </motion.span>
         </motion.p>
       </div>
     </footer>

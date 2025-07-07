@@ -86,6 +86,11 @@ This is a personal portfolio website for Anoushkha, an AI & ML Engineering stude
 ```
 Changelog:
 - July 07, 2025. Initial setup
+- July 07, 2025. Updated name to "ANV Anoushkha Lathikaa" with animated gradient text effects
+- July 07, 2025. Modified cursor trail to remove solid dot, now shows hollow circle
+- July 07, 2025. Replaced blog section with comprehensive experiences and achievements section
+- July 07, 2025. Updated layout to left-aligned design with smaller profile image
+- July 07, 2025. Enhanced background gradient from black to purplish tones
 ```
 
 ## User Preferences

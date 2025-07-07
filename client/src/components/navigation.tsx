@@ -36,9 +36,24 @@ export default function Navigation() {
         <div className="flex justify-between items-center">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="font-space font-bold text-xl text-gradient cursor-pointer"
+            animate={{ 
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+            }}
+            transition={{ 
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="font-space font-bold text-xl cursor-pointer"
+            style={{
+              background: "linear-gradient(90deg, hsl(248, 53%, 58%), hsl(195, 53%, 79%), hsl(120, 60%, 70%), hsl(248, 53%, 58%))",
+              backgroundSize: "200% 100%",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text"
+            }}
           >
-            Anoushkha
+            ANV Anoushkha Lathikaa
           </motion.div>
           
           <div className="hidden md:flex space-x-8">

@@ -60,9 +60,26 @@ export default function ContactSection() {
             className="bg-white/5 backdrop-blur-custom rounded-2xl p-8 border border-white/10"
           >
             <div className="text-center mb-8">
-              <h3 className="font-space font-semibold text-2xl mb-2 text-gradient">
-                Anoushkha
-              </h3>
+              <motion.h3 
+                className="font-space font-semibold text-2xl mb-2"
+                animate={{ 
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+                }}
+                transition={{ 
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                style={{
+                  background: "linear-gradient(90deg, hsl(248, 53%, 58%), hsl(195, 53%, 79%), hsl(120, 60%, 70%), hsl(248, 53%, 58%))",
+                  backgroundSize: "200% 100%",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text"
+                }}
+              >
+                ANV Anoushkha Lathikaa
+              </motion.h3>
               <p className="text-gray-400">
                 vedaanoushkha@gmail.com
               </p>

@@ -191,14 +191,15 @@
 
 .cursor-trail {
   position: fixed;
-  width: 20px;
-  height: 20px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
-  background: hsl(248, 53%, 58%);
-  opacity: 0.6;
+  background: transparent;
+  border: 2px solid hsl(248, 53%, 58%);
+  opacity: 0.8;
 }
 
 .scroll-indicator {

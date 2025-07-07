@@ -49,12 +49,27 @@ export default function HeroSection() {
             className="flex-1 text-center lg:text-left"
           >
             <motion.h1
-              className="font-space font-bold text-4xl md:text-6xl mb-6 text-gradient"
+              className="font-space font-bold text-4xl md:text-6xl mb-6"
               initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              animate={{ 
+                opacity: 1, 
+                y: 0,
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+              }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.6 },
+                y: { duration: 0.8, delay: 0.6 },
+                backgroundPosition: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+              }}
+              style={{
+                background: "linear-gradient(90deg, hsl(248, 53%, 58%), hsl(195, 53%, 79%), hsl(120, 60%, 70%), hsl(25, 100%, 94%), hsl(248, 53%, 58%))",
+                backgroundSize: "300% 100%",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text"
+              }}
             >
-              Hey, I'm Anoushkha 👋
+              Hey, I'm ANV Anoushkha Lathikaa 👋
             </motion.h1>
             
             <motion.p
