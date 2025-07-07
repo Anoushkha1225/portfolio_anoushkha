@@ -6,7 +6,7 @@ import HeroSection from "@/components/hero-section";
 import ProjectsSection from "@/components/projects-section";
 import SkillsSection from "@/components/skills-section";
 import GoalsSection from "@/components/goals-section";
-import FunFactsSection from "@/components/fun-facts-section";
+
 import ExperiencesSection from "@/components/experiences-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
@@ -50,7 +50,6 @@ export default function Home() {
         <GoalsSection />
         <SkillsSection />
         <ProjectsSection />
-        <FunFactsSection />
         <ExperiencesSection />
         <ContactSection />
       </motion.main>

@@ -8,60 +8,36 @@ export default function ExperiencesSection() {
     triggerOnce: true,
   });
 
-  const experiences = [
+  const academics = [
     {
-      title: "AI & ML Engineering Student",
-      company: "University",
-      location: "Computer Science Department",
-      period: "2023 - Present",
-      description: "Focused on machine learning algorithms, neural networks, and deep learning frameworks. Working on projects involving LSTM networks and transformer architectures.",
+      title: "B. Tech CSE-AIML",
+      company: "CMR Technical Campus (CMRTC), Hyderabad",
+      location: "Currently pursuing 4th Year",
+      period: "2022 - 2026",
+      description: "Specialized in Artificial Intelligence and Machine Learning within Computer Science Engineering. Focused on neural networks, deep learning frameworks, and practical AI applications.",
       type: "education",
       color: "lavender"
-    },
-    {
-      title: "Machine Learning Research",
-      company: "Academic Project",
-      location: "University Lab",
-      period: "2024",
-      description: "Developed deepfake detection system using LSTM neural networks. Achieved high accuracy in identifying manipulated video content.",
-      type: "research",
-      color: "mint"
-    },
-    {
-      title: "Open Source Contributor",
-      company: "GitHub Community",
-      location: "Remote",
-      period: "2023 - Present",
-      description: "Contributing to various AI and ML projects on GitHub. Building tools and experiments in Python, focusing on practical applications of neural networks.",
-      type: "contribution",
-      color: "baby-blue"
     }
   ];
 
-  const achievements = [
+  const extraCurriculars = [
     {
-      title: "Deepfake Detection Model",
-      description: "Built and trained LSTM-based neural network achieving 92% accuracy in video authenticity detection",
+      title: "Social Media Head – Lexis Club, CMRTC",
+      description: "Planned and executed digital content strategies to boost the club's visibility. Managed content calendars, engaging visuals, and interactive campaigns to promote events and drive audience engagement across media platforms.",
       icon: Award,
-      color: "light-peach"
-    },
-    {
-      title: "Research Publication",
-      description: "Co-authored paper on 'Advanced Techniques in Video Manipulation Detection' (In Progress)",
-      icon: ExternalLink,
-      color: "lavender"
-    },
-    {
-      title: "GitHub Projects",
-      description: "Maintained 10+ repositories with focus on AI/ML implementations and educational resources",
-      icon: ExternalLink,
       color: "mint"
     },
     {
-      title: "Technical Leadership",
-      description: "Led study group of 15+ students exploring advanced machine learning concepts and practical applications",
-      icon: Award,
+      title: "Volunteer – Technical Events, CMRTC",
+      description: "Actively participated in organizing and supporting various tech events and college programs. Helped with coordination, logistics, and smooth execution of activities.",
+      icon: ExternalLink,
       color: "baby-blue"
+    },
+    {
+      title: "Top 5 Finalist – 24-Hour Hackathon, Vijayawada (Jan 2025)",
+      description: "Collaborated with a team to design and develop an AI-powered chatbot to address a real-world problem statement on AI based health assistant. Our solution was shortlisted among the top 5 finalists for its innovation and usability.",
+      icon: Award,
+      color: "light-peach"
     }
   ];
 
@@ -87,7 +63,7 @@ export default function ExperiencesSection() {
   };
 
   return (
-    <section id="experiences" className="py-20 relative" ref={ref}>
+    <section id="academics" className="py-20 relative" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -96,14 +72,14 @@ export default function ExperiencesSection() {
           className="text-center mb-16"
         >
           <h2 className="font-space font-bold text-4xl md:text-5xl mb-4 text-gradient">
-            Experiences & Achievements
+            Academics & Extra-Curriculars
           </h2>
           <p className="text-gray-400 text-lg">
-            My journey in AI & ML engineering
+            My educational journey and activities
           </p>
         </motion.div>
 
-        {/* Experiences Section */}
+        {/* Academics Section */}
         <div className="mb-16">
           <motion.h3
             initial={{ opacity: 0, x: -20 }}
@@ -111,7 +87,7 @@ export default function ExperiencesSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-space font-semibold text-2xl mb-8 text-mint"
           >
-            Professional Experience
+            🎓 Academics
           </motion.h3>
           
           <motion.div
@@ -120,7 +96,7 @@ export default function ExperiencesSection() {
             animate={inView ? "visible" : "hidden"}
             className="space-y-6"
           >
-            {experiences.map((exp, index) => (
+            {academics.map((exp, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
@@ -151,7 +127,7 @@ export default function ExperiencesSection() {
           </motion.div>
         </div>
 
-        {/* Achievements Section */}
+        {/* Extra-Curriculars Section */}
         <div>
           <motion.h3
             initial={{ opacity: 0, x: -20 }}
@@ -159,16 +135,16 @@ export default function ExperiencesSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-space font-semibold text-2xl mb-8 text-lavender"
           >
-            Key Achievements
+            🌟 Extra-Curricular Activities
           </motion.h3>
           
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="grid md:grid-cols-2 gap-6"
+            className="grid md:grid-cols-1 gap-6"
           >
-            {achievements.map((achievement, index) => (
+            {extraCurriculars.map((achievement, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}

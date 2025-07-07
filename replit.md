@@ -94,6 +94,10 @@ Changelog:
 - July 07, 2025. Reordered sections: Introduction → Goals → Skills → Projects → Rest
 - July 07, 2025. Removed cursor trail animation completely
 - July 07, 2025. Updated navigation to include Goals section in proper order
+- July 07, 2025. Added custom cursor animation with blackish purple color
+- July 07, 2025. Removed fun facts section completely
+- July 07, 2025. Transformed experiences section to academics and extra-curriculars
+- July 07, 2025. Updated content with CMRTC academic details and specific achievements
 ```
 
 ## User Preferences
