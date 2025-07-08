@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import profileImage from "@assets/WhatsApp Image 2024-06-28 at 20.52.00_fa217f05_1751918333496.jpg";
 import TicTacToe from "./tic-tac-toe";
 import { useParallax } from "../hooks/use-parallax";
 
@@ -11,6 +10,8 @@ export default function HeroSection() {
 
   const profileParallax = useParallax({ intensity: 15, range: 150 });
   const gameParallax = useParallax({ intensity: 10, range: 200 });
+
+  const profileImage = "/WhatsApp Image 2024-06-28 at 20.52.00_fa217f05_1751918333496.jpg";
 
   const identityPoints = [
     { emoji: '🧠', text: 'AI & ML Engineering Student', color: 'mint' },

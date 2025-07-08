@@ -8,16 +8,16 @@ interface ParallaxOptions {
 
 export function useParallax(options: ParallaxOptions = {}) {
   const { intensity = 20, range = 100, enabled = true } = options;
-  const elementRef = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [transform, setTransform] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     if (!enabled) return;
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (!elementRef.current) return;
+      if (!ref.current) return;
 
-      const rect = elementRef.current.getBoundingClientRect();
+      const rect = ref.current.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
       
@@ -34,7 +34,7 @@ export function useParallax(options: ParallaxOptions = {}) {
       setTransform({ x: 0, y: 0 });
     };
 
-    const element = elementRef.current;
+    const element = ref.current;
     if (element) {
       element.addEventListener('mousemove', handleMouseMove);
       element.addEventListener('mouseleave', handleMouseLeave);
@@ -47,7 +47,7 @@ export function useParallax(options: ParallaxOptions = {}) {
   }, [intensity, range, enabled]);
 
   return {
-    ref: elementRef,
+    ref: ref,
     style: {
       transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
       transition: 'transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',

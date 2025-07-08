@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github, Star } from "lucide-react";
-import { useGithubProjects } from "@/hooks/use-github-projects";
+import { useGithubProjects } from "../hooks/use-github-projects";
 import { useParallax } from "../hooks/use-parallax";
 
 export default function ProjectsSection() {

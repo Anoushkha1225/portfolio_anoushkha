@@ -1,17 +1,17 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import CursorTrail from "@/components/cursor-trail";
-import Navigation from "@/components/navigation";
-import HeroSection from "@/components/hero-section";
-import ProjectsSection from "@/components/projects-section";
-import SkillsSection from "@/components/skills-section";
-import GoalsSection from "@/components/goals-section";
+import CursorTrail from "../components/cursor-trail";
+import Navigation from "../components/navigation";
+import HeroSection from "../components/hero-section";
+import ProjectsSection from "../components/projects-section";
+import SkillsSection from "../components/skills-section";
+import GoalsSection from "../components/goals-section";
 
-import LoadingSection from "@/components/loading-section";
-import ExperiencesSection from "@/components/experiences-section";
-import ContactSection from "@/components/contact-section";
-import Footer from "@/components/footer";
-import EasterEgg from "@/components/easter-egg";
+import LoadingSection from "../components/loading-section";
+import ExperiencesSection from "../components/experiences-section";
+import ContactSection from "../components/contact-section";
+import Footer from "../components/footer";
+import EasterEgg from "../components/easter-egg";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
