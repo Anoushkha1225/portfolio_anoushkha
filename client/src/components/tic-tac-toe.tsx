@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { RotateCcw } from "lucide-react";
 import { useParallax } from "../hooks/use-parallax";
-
+import React from "react";
 type Player = 'X' | 'O' | null;
 
 export default function TicTacToe() {

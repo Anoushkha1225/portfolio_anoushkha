@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Award, Calendar, MapPin, ExternalLink } from "lucide-react";
+import React from "react";
 
 export default function ExperiencesSection() {
   const { ref, inView } = useInView({

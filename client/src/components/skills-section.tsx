@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import React from "react";
 export default function SkillsSection() {
   const { ref, inView } = useInView({
     threshold: 0.1,

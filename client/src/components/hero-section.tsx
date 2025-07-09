@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import TicTacToe from "./tic-tac-toe";
 import { useParallax } from "../hooks/use-parallax";
-
+import React from "react";
 export default function HeroSection() {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });

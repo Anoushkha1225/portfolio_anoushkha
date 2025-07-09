@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Mail, Github, Linkedin } from "lucide-react";
+import React from "react";
 
 export default function ContactSection() {
   const { ref, inView } = useInView({

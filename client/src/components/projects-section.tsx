@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github, Star } from "lucide-react";
 import { useGithubProjects } from "../hooks/use-github-projects";
 import { useParallax } from "../hooks/use-parallax";
+import React from "react";
 
 export default function ProjectsSection() {
   const { ref, inView } = useInView({

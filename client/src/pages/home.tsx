@@ -6,7 +6,7 @@ import HeroSection from "../components/hero-section";
 import ProjectsSection from "../components/projects-section";
 import SkillsSection from "../components/skills-section";
 import GoalsSection from "../components/goals-section";
-
+import React from "react";
 import LoadingSection from "../components/loading-section";
 import ExperiencesSection from "../components/experiences-section";
 import ContactSection from "../components/contact-section";
